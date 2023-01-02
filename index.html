@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <title>Universidade XYZ</title>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img class="logo_image" src="assets/images/logo.png" alt="logo">
+        <p class="logo_letter">UNIVERSIDADE <br/> <span class="xyz">XYZ</span></p>
+    </div>
+
+    <button class="hamburguer"><span><i class="fas fa-bars"></i></span></button>
+
+    <ul>
+        <li >
+            <a class="is-active" data-switcher data-tab="1" href="#">
+                <span><i class="fas fa-user-tie"></i></span>
+                <span>Professores</span>
+            </a>
+        </li>
+
+        <li >
+            <a data-switcher data-tab="2" href="#">
+                <span><i class="fas fa-bookmark"></i></span>
+                <span>Disciplinas</span>
+            </a>
+        </li>
+        <li >
+            <a data-switcher data-tab="3" href="#">
+                <span><i class="fas fa-user"></i></span>
+                <span>Estudantes</span>
+            </a>
+        </li>
+        <li >
+            <a data-switcher data-tab="4" href="#">
+                <span><i class="fas fa-book"></i></span>
+                <span>Cursos</span>
+            </a>
+        </li>
+    </ul>
+
+
+</nav>
+
+<aside>
+    <div class="wrapper">
+        <p class="aside_text">X<br/>Y<br/>Z</p>
+    </div>
+</aside>
+
+<div class="top_menu">
+
+    <div class="top_menu_welcome is-active">
+        <span><i class="top_menu_welcome_icon fas fa-cogs"></i></span>
+        <span class="top_menu_welcome_text">Sistema de gestão universitária</span>
+    </div>
+
+    <a href="#" class="top_menu_btn"><i class="fas fa-arrow-left"></i></a>
+
+
+    <div class="top_menu_search">
+        <input placeholder="Pesquisar" type="text">
+        <button><i class="top_menu_search_btn_icon fas fa-search"></i></button>
+    </div>
+
+
+</div>
+
+<main>
+ 
+    <!-- Links para criação de prof,estudante,disciplina ou curso -->
+
+    <p class="main_create is-active">Professores - <a data-switcher data-tab="7" class="info" href="#"> <b>Criar</b></a></p>
+    <p class="main_create">Disciplinas - <a data-switcher data-tab="9" class="info" href="#"> <b>Criar</b></a></p>
+    <p class="main_create">Estudantes - <a data-switcher data-tab="11" class="info" href="#"> <b>Criar</b></a></p>
+    <p class="main_create">Cursos - <a data-switcher data-tab="13" class="info" href="#"> <b>Criar</b></a></p>
+
+    <!-- Ver Todos Professores -->
+
+    <article class="is-active main_article" data-page="1">
+            <div class="main_article_top ">
+                <span class="main_article_top_label">#Professor 1</span>
+                <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+            </div>
+
+            <div class="main_article_body">
+                <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+                <div class="main_article_body_info">
+
+                    <div class="main_article_body_info_left">
+                        <p class="info">Nome:</p>
+                        <p class="info">Data de nascimento:</p>
+                        <p class="info">Salário:</p>
+                        <p class="info">Disciplinas:</p>
+                        <div class="main_article_body_info_left_social">
+
+                            <button class="social"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                            <button class="social"><i class="fas fa-print"></i></button>
+                            <button class="social"><i class="fas fa-share"></i></button>
+
+                        </div>
+                    </div>
+
+                    <div class="main_article_body_info_right">
+                        <p class="info">Ricardo Silva</p>
+                        <p class="info">24/03/2000</p>
+                        <p class="info">2000€</p>
+                        <a  data-switcher data-tab="5" class="info" href="#">Ver Disciplinas</a>
+                        <a  data-switcher data-tab="6" class="info" href="#">Editar Perfil</a>
+                    </div>
+
+                </div>
+            </div>
+    </article>
+    <article class="is-active main_article" data-page="1">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Professor 2</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Data de nascimento:</p>
+                    <p class="info">Salário:</p>
+                    <p class="info">Disciplinas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Ricardo Silva</p>
+                    <p class="info">24/03/2000</p>
+                    <p class="info">2000€</p>
+                    <a  data-switcher data-tab="5" class="info" href="#">Ver Disciplinas</a>
+                    <a  data-switcher data-tab="6" class="info" href="#">Editar Perfil</a>
+                </div>
+
+            </div>
+        </div>
+    </article> 
+    <article class="is-active main_article" data-page="1">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Professor 3</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Data de nascimento:</p>
+                    <p class="info">Salário:</p>
+                    <p class="info">Disciplinas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Ricardo Silva</p>
+                    <p class="info">24/03/2000</p>
+                    <p class="info">2000€</p>
+                    <a  data-switcher data-tab="5" class="info" href="#">Ver Disciplinas</a>
+                    <a  data-switcher data-tab="6" class="info" href="#">Editar Perfil</a>
+                </div>
+
+            </div>
+        </div>
+    </article>     
+
+    <!-- Ver Todas Disciplinas -->
+    <article class="main_article" data-page="2">
+            <div class="main_article_top_table ">
+                <span class="main_article_top_table_label ">Todas</span>
+
+                <div class="main_article_top_table_right">
+                    <input placeholder="Pesquisar" type="text">
+                    <button><i class="top_menu_search_btn_icon fas fa-search"></i></button>
+                </div>
+
+            </div>
+            <table style="overflow-x:auto;" class="main_article_table" >
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Nome da Disciplina</td>
+                        <td>Semestre</td>
+                        <td>Carga Horária</td>
+                        <td>Curso</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+
+    
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Engenharia Informática</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Engenharia Informática</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Engenharia Informática</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Engenharia Informática</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Engenharia Informática</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>10</td>
+                        <td>Engenharia Informática</td>
+                        <td><a data-switcher data-tab="8" class="info" href="#"> Alterar</a></td>
+
+                    </tr>
+                </tbody>
+            </table>
+    </article>
+
+    <!-- Ver Todos Estudantes -->
+    <article class="main_article" data-page="3">
+            <div class="main_article_top ">
+                <span class="main_article_top_label">#Estudante 1</span>
+                <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+            </div>
+
+            <div class="main_article_body">
+                <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+                <div class="main_article_body_info">
+
+                    <div class="main_article_body_info_left">
+                        <p class="info">Nome:</p>
+                        <p class="info">Número de Matrícula:</p>
+                        <p class="info">Data de Nascimento:</p>
+                        <p class="info">Notas:</p>
+                        <div class="main_article_body_info_left_social">
+
+                            <button class="social"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                            <button class="social"><i class="fas fa-print"></i></button>
+                            <button class="social"><i class="fas fa-share"></i></button>
+
+                        </div>
+                    </div>
+
+                    <div class="main_article_body_info_right">
+                        <p class="info">Ricardo Silva</p>
+                        <p class="info">30010472</p>
+                        <p style="font-weight: var(--REGULAR); color: var(--GREY1);" class="info">24/03/2000</p>
+                        <a  data-switcher data-tab="14" class="info" href="#">Ver Notas</a>
+                        <a  data-switcher data-tab="10" class="info" href="#">Editar Perfil</a>
+                    </div>
+
+                </div>
+            </div>
+    </article>
+
+    <article class="main_article" data-page="3">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Estudante 2</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Número de Matrícula:</p>
+                    <p class="info">Data de Nascimento:</p>
+                    <p class="info">Notas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Ricardo Silva</p>
+                    <p class="info">30010472</p>
+                    <p style="font-weight: var(--REGULAR); color: var(--GREY1);" class="info">24/03/2000</p>
+                    <a  data-switcher data-tab="14" class="info" href="#">Ver Notas</a>
+                    <a  data-switcher data-tab="10" class="info" href="#">Editar Perfil</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    
+    <article class="main_article" data-page="3">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Estudante 3</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Número de Matrícula:</p>
+                    <p class="info">Data de Nascimento:</p>
+                    <p class="info">Notas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Ricardo Silva</p>
+                    <p class="info">30010472</p>
+                    <p style="font-weight: var(--REGULAR); color: var(--GREY1);" class="info">24/03/2000</p>
+                    <a  data-switcher data-tab="14" class="info" href="#">Ver Notas</a>
+                    <a  data-switcher data-tab="10" class="info" href="#">Editar Perfil</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <article class="main_article" data-page="3">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Estudante 4</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/unkown.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Número de Matrícula:</p>
+                    <p class="info">Data de Nascimento:</p>
+                    <p class="info">Notas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Ricardo Silva</p>
+                    <p class="info">30010472</p>
+                    <p style="font-weight: var(--REGULAR); color: var(--GREY1);" class="info">24/03/2000</p>
+                    <a  data-switcher data-tab="14" class="info" href="#">Ver Notas</a>
+                    <a  data-switcher data-tab="10" class="info" href="#">Editar Perfil</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <!-- Ver Todos Cursos -->
+    <article class="main_article" data-page="4">
+            <div class="main_article_top ">
+                <span class="main_article_top_label">#Curso 1</span>
+                <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+            </div>
+
+            <div class="main_article_body">
+                <img src="assets/images/it.jpg" alt="" class="main_article_body_img">
+                <div class="main_article_body_info">
+
+                    <div class="main_article_body_info_left">
+                        <p class="info">Nome:</p>
+                        <p class="info">Tipo:</p>
+                        <p class="info">Faculdade:</p>
+                        <p class="info">Disciplinas:</p>
+                        <div class="main_article_body_info_left_social">
+
+                            <button class="social"><i class="fab fa-facebook-f"></i></button>
+                            <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                            <button class="social"><i class="fas fa-print"></i></button>
+                            <button class="social"><i class="fas fa-share"></i></button>
+
+                        </div>
+                    </div>
+
+                    <div class="main_article_body_info_right">
+                        <p class="info">Informática</p>
+                        <p class="info">Licenciatura</p>
+                        <p class="info">FE-UAL</p>
+                        <a  data-switcher data-tab="15" class="info" href="#">Ver Disciplinas</a>
+                        <a  data-switcher data-tab="12" class="info" href="#">Editar Curso</a>
+                    </div>
+
+                </div>
+            </div>
+    </article>
+
+    <article class="main_article" data-page="4">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Curso 2</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/it.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Tipo:</p>
+                    <p class="info">Faculdade:</p>
+                    <p class="info">Disciplinas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Informática</p>
+                    <p class="info">Licenciatura</p>
+                    <p class="info">FE-UAL</p>
+                    <a  data-switcher data-tab="15" class="info" href="#">Ver Disciplinas</a>
+                    <a  data-switcher data-tab="12" class="info" href="#">Editar Curso</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    
+    <article class="main_article" data-page="4">
+        <div class="main_article_top ">
+            <span class="main_article_top_label">#Curso 3</span>
+            <button class="main_article_top_btn"><i class="main_article_top_btn_icon fas fa-times"></i></button>
+        </div>
+
+        <div class="main_article_body">
+            <img src="assets/images/it.jpg" alt="" class="main_article_body_img">
+            <div class="main_article_body_info">
+
+                <div class="main_article_body_info_left">
+                    <p class="info">Nome:</p>
+                    <p class="info">Tipo:</p>
+                    <p class="info">Faculdade:</p>
+                    <p class="info">Disciplinas:</p>
+                    <div class="main_article_body_info_left_social">
+
+                        <button class="social"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social"><i class="fab fa-linkedin-in"></i></button>
+                        <button class="social"><i class="fas fa-print"></i></button>
+                        <button class="social"><i class="fas fa-share"></i></button>
+
+                    </div>
+                </div>
+
+                <div class="main_article_body_info_right">
+                    <p class="info">Informática</p>
+                    <p class="info">Licenciatura</p>
+                    <p class="info">FE-UAL</p>
+                    <a  data-switcher data-tab="15" class="info" href="#">Ver Disciplinas</a>
+                    <a  data-switcher data-tab="12" class="info" href="#">Editar Curso</a>
+                </div>
+
+            </div>
+        </div>
+
+    </article>
+
+     <!-- Ver Disciplinas De Prof -->
+    <article class="main_article" data-page="5">
+            <div class="main_article_top_table">
+                <span class="main_article_top_table_label ">Professor XYZ</span>
+
+                <div  class="main_article_top_table_right">
+                    <input placeholder="Pesquisar" type="text">
+                    <button><i class="top_menu_search_btn_icon fas fa-search"></i></button>
+                </div>
+
+            </div>
+            <table style="overflow-x:auto;"  class="main_article_table" >
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Nome da Disciplina</td>
+                        <td>Semestre</td>
+                        <td>Curso</td>
+    
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>Engenharia Informática</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>Engenharia Informática</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>Engenharia Informática</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>Engenharia Informática</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>Engenharia Informática</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                        <td>Engenharia Informática</td>
+                    </tr>
+                </tbody>
+            </table>
+    </article>
+
+    <!-- Ver Disciplinas De Estudante -->
+    <article  class="main_article" data-page="14">
+                <div class="main_article_top_table ">
+                    <span class="main_article_top_table_label ">Estudante XYZ</span>
+    
+                    <div class="main_article_top_table_right">
+                        <input placeholder="Pesquisar" type="text">
+                        <button><i class="top_menu_search_btn_icon fas fa-search"></i></button>
+                    </div>
+    
+                </div>
+                <table style="overflow-x:auto;" class="main_article_table_std" >
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Nome da Disciplina</td>
+                            <td>Semestre</td>
+                            <td >Nota / 20</td>
+                            <td>Curso</td>
+        
+        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Álgebra Linear</td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>Engenharia Informática</td>
+    
+    
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Álgebra Linear</td>
+                            <td>1</td>
+                            <td >18</td>
+                            <td>Engenharia Informática</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Álgebra Linear</td>
+                            <td>1</td>
+                            <td >1</td>
+                            <td>Engenharia Informática</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Álgebra Linear</td>
+                            <td>1</td>
+                            <td >18</td>
+                            <td>Engenharia Informática</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Álgebra Linear</td>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>Engenharia Informática</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Álgebra Linear</td>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>Engenharia Informática</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </article>
+
+     <!-- Ver Disciplinas De Curso -->
+    <article  class="main_article" data-page="15">
+            <div class="main_article_top_table">
+                <span class="main_article_top_table_label ">Curso XYZ</span>
+
+                <div class="main_article_top_table_right">
+                    <input placeholder="Pesquisar" type="text">
+                    <button><i class="top_menu_search_btn_icon fas fa-search"></i></button>
+                </div>
+
+            </div>
+            <table style="overflow-x:auto;" class="main_article_table" >
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Nome da Disciplina</td>
+                        <td>Semestre</td>
+    
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Álgebra Linear</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+    </article>
+
+        <!-- Alterar e Criar do Professor -->
+    <article class="secondary_article" data-page="6">
+            <h1>Alterar Perfil</h1>
+            <div class="secondary_article_underline"></div>
+            <input placeholder="Nome do Professor" type="text">
+            <input placeholder="Data de Nascimento" type="date">
+            <input placeholder="Salário" type="number">
+            <div class="secondary_article_discips">
+                <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                <select size="3" name="discips" id="discips" multiple>
+                    <option value="mat">Matemática</option>
+                    <option value="fis">Física</option>
+                    <option value="quim">Química</option>
+                    <option value="alg">Álgebra</option>
+                </select>
+            </div>
+            <button class="secondary_article_button"> Alterar </button>
+
+    </article>
+
+    <article class="secondary_article" data-page="7">
+            <h1>Criar Professor</h1>
+            <div class="secondary_article_underline"></div>
+            <input placeholder="Nome do Professor" type="text">
+            <input placeholder="Data de Nascimento" type="date">
+            <input placeholder="Salário" type="number">
+            <div class="secondary_article_discips">
+                <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                <select size="3" name="discips" id="discips" multiple>
+                    <option value="mat">Matemática</option>
+                    <option value="fis">Física</option>
+                    <option value="quim">Química</option>
+                    <option value="alg">Álgebra</option>
+                </select>
+            </div>
+            <button class="secondary_article_button"> Criar </button>
+
+    </article>
+
+
+    <!-- Alterar e Criar da Disciplina -->
+    <article class="secondary_article" data-page="8">
+
+        <h1>Alterar Disciplina</h1>
+        <div class="secondary_article_underline"></div>
+        <input placeholder="Nome da Disciplina" type="text">
+        <input placeholder="Carga Horária" type="number">
+        <input placeholder="Semestre" type="number">
+        <input placeholder="Professor" type="text">
+        <button class="secondary_article_button"> Alterar </button>
+        
+    </article>
+        
+    <article class="secondary_article" data-page="9">
+                    <h1>Criar Disciplina</h1>
+                    <div class="secondary_article_underline"></div>
+                    <input placeholder="Nome da Disciplina" type="text">
+                    <input placeholder="Semestre" type="number">
+                    <input placeholder="Carga Horária" type="number">
+                    <input placeholder="Professor" type="text">
+                    <button class="secondary_article_button"> Criar </button>
+        
+    </article>
+
+    <!-- Alterar e Criar do Estudante -->
+    <article class="secondary_article" data-page="10">
+                    <h1>Alterar Perfil</h1>
+                    <div class="secondary_article_underline"></div>
+                    <input placeholder="Nome do Estudante" type="text">
+                    <input placeholder="Data de Nascimento" type="date">
+                    <input placeholder="Salário" type="number">
+                    <div class="secondary_article_discips">
+                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                        <select size="3" name="discips" id="discips" multiple>
+                            <option value="mat">Matemática</option>
+                            <option value="fis">Física</option>
+                            <option value="quim">Química</option>
+                            <option value="alg">Álgebra</option>
+                        </select>
+                    </div>
+                    <button class="secondary_article_button"> Alterar </button>
+        
+    </article>
+        
+    <article class="secondary_article" data-page="11">
+                    <h1>Criar Estudante</h1>
+                    <div class="secondary_article_underline"></div>
+                    <input placeholder="Nome do Professor" type="text">
+                    <input placeholder="Data de Nascimento" type="date">
+                    <input placeholder="Salário" type="number">
+                    <div class="secondary_article_discips">
+                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                        <select size="3" name="discips" id="discips" multiple>
+                            <option value="mat">Matemática</option>
+                            <option value="fis">Física</option>
+                            <option value="quim">Química</option>
+                            <option value="alg">Álgebra</option>
+                        </select>
+                    </div>
+                    <button class="secondary_article_button"> Criar </button>
+        
+    </article>
+
+    <!-- Alterar e Criar do curso -->
+    <article class="secondary_article" data-page="12">
+                    <h1>Alterar Curso</h1>
+                    <div class="secondary_article_underline"></div>
+                    <input placeholder="Nome do Curso" type="text">
+                    <input placeholder="Tipo" type="text">
+                    <input placeholder="Faculdade" type="text">
+                    <div class="secondary_article_discips">
+                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                        <select size="3" name="discips" id="discips" multiple>
+                            <option value="mat">Matemática</option>
+                            <option value="fis">Física</option>
+                            <option value="quim">Química</option>
+                            <option value="alg">Álgebra</option>
+                        </select>
+                    </div>
+                    <button class="secondary_article_button"> Alterar </button>
+        
+    </article>
+        
+    <article class="secondary_article" data-page="13">
+                    <h1>Criar Curso</h1>
+                    <div class="secondary_article_underline"></div>
+                    <input placeholder="Nome do Curso" type="text">
+                    <input placeholder="Tipo" type="text">
+                    <input placeholder="Faculdade" type="text">
+                    <div class="secondary_article_discips">
+                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                        <select size="3" name="discips" id="discips" multiple>
+                            <option value="mat">Matemática</option>
+                            <option value="fis">Física</option>
+                            <option value="quim">Química</option>
+                            <option value="alg">Álgebra</option>
+                        </select>
+                    </div>
+                    <button class="secondary_article_button"> Criar </button>
+        
+    </article>
+
+
+</main>
+<footer>
+    <p id="copyright"></p>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
