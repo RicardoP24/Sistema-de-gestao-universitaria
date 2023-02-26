@@ -427,6 +427,7 @@
             </div>
         </div>
     </article>
+    
     <!-- Ver Todos Cursos -->
     <article class="main_article" data-page="4">
             <div class="main_article_top ">
@@ -739,17 +740,27 @@
     <article class="secondary_article" data-page="6">
             <h1>Alterar Perfil</h1>
             <div class="secondary_article_underline"></div>
-            <input placeholder="Nome do Professor" type="text">
-            <input placeholder="Data de Nascimento" type="date">
-            <input placeholder="Salário" type="number">
-            <div class="secondary_article_discips">
-                <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
-                <select size="3" name="discips" id="discips" multiple>
-                    <option value="mat">Matemática</option>
-                    <option value="fis">Física</option>
-                    <option value="quim">Química</option>
-                    <option value="alg">Álgebra</option>
-                </select>
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Nome do Professor" type="text">
+            </div>
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Data de Nascimento" type="date">
+            </div>
+
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Salário" type="number">
+            </div>
+
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <div class="secondary_article_discips">
+                    <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                    <select size="3" name="discips" id="discips" multiple>
+                        <option value="mat">Matemática</option>
+                        <option value="fis">Física</option>
+                        <option value="quim">Química</option>
+                        <option value="alg">Álgebra</option>
+                    </select>
+                </div>
             </div>
             <button class="secondary_article_button"> Alterar </button>
 
@@ -758,17 +769,29 @@
     <article class="secondary_article" data-page="7">
             <h1>Criar Professor</h1>
             <div class="secondary_article_underline"></div>
+
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
             <input placeholder="Nome do Professor" type="text">
+            </div>
+
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
             <input placeholder="Data de Nascimento" type="date">
+            </div>
+
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
             <input placeholder="Salário" type="number">
-            <div class="secondary_article_discips">
-                <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
-                <select size="3" name="discips" id="discips" multiple>
-                    <option value="mat">Matemática</option>
-                    <option value="fis">Física</option>
-                    <option value="quim">Química</option>
-                    <option value="alg">Álgebra</option>
-                </select>
+            </div>
+
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <div class="secondary_article_discips">
+                    <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                    <select size="3" name="discips" id="discips" multiple>
+                        <option value="mat">Matemática</option>
+                        <option value="fis">Física</option>
+                        <option value="quim">Química</option>
+                        <option value="alg">Álgebra</option>
+                    </select>
+                </div>
             </div>
             <button class="secondary_article_button"> Criar </button>
 
@@ -780,22 +803,41 @@
 
         <h1>Alterar Disciplina</h1>
         <div class="secondary_article_underline"></div>
-        <input placeholder="Nome da Disciplina" type="text">
-        <input placeholder="Carga Horária" type="number">
-        <input placeholder="Semestre" type="number">
-        <input placeholder="Professor" type="text">
+        <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+            <input placeholder="Nome da Disciplina" type="text">
+        </div>
+        <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+            <input placeholder="Carga Horária" type="number">
+        </div>
+
+        <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+            <input placeholder="Semestre" type="number">
+        </div>
+
+        <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+            <input placeholder="Professor" type="text">
+        </div>
+
         <button class="secondary_article_button"> Alterar </button>
         
     </article>
         
     <article class="secondary_article" data-page="9">
-                    <h1>Criar Disciplina</h1>
-                    <div class="secondary_article_underline"></div>
-                    <input placeholder="Nome da Disciplina" type="text">
-                    <input placeholder="Semestre" type="number">
-                    <input placeholder="Carga Horária" type="number">
-                    <input placeholder="Professor" type="text">
-                    <button class="secondary_article_button"> Criar </button>
+            <h1>Criar Disciplina</h1>
+            <div class="secondary_article_underline"></div>
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Nome da Disciplina" type="text">
+            </div>
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Semestre" type="number">
+            </div>
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Carga Horária" type="number">
+            </div>
+            <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                <input placeholder="Professor" type="text">
+            </div>
+            <button class="secondary_article_button"> Criar </button>
         
     </article>
 
@@ -803,17 +845,25 @@
     <article class="secondary_article" data-page="10">
                     <h1>Alterar Perfil</h1>
                     <div class="secondary_article_underline"></div>
-                    <input placeholder="Nome do Estudante" type="text">
-                    <input placeholder="Data de Nascimento" type="date">
-                    <input placeholder="Salário" type="number">
-                    <div class="secondary_article_discips">
-                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
-                        <select size="3" name="discips" id="discips" multiple>
-                            <option value="mat">Matemática</option>
-                            <option value="fis">Física</option>
-                            <option value="quim">Química</option>
-                            <option value="alg">Álgebra</option>
-                        </select>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Nome do Estudante" type="text">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Data de Nascimento" type="date">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Número de Matrícula" type="number">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <div class="secondary_article_discips">
+                            <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                            <select size="3" name="discips" id="discips" multiple>
+                                <option value="mat">Matemática</option>
+                                <option value="fis">Física</option>
+                                <option value="quim">Química</option>
+                                <option value="alg">Álgebra</option>
+                            </select>
+                        </div>
                     </div>
                     <button class="secondary_article_button"> Alterar </button>
         
@@ -822,17 +872,25 @@
     <article class="secondary_article" data-page="11">
                     <h1>Criar Estudante</h1>
                     <div class="secondary_article_underline"></div>
-                    <input placeholder="Nome do Professor" type="text">
-                    <input placeholder="Data de Nascimento" type="date">
-                    <input placeholder="Salário" type="number">
-                    <div class="secondary_article_discips">
-                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
-                        <select size="3" name="discips" id="discips" multiple>
-                            <option value="mat">Matemática</option>
-                            <option value="fis">Física</option>
-                            <option value="quim">Química</option>
-                            <option value="alg">Álgebra</option>
-                        </select>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Nome do Estudante" type="text">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Data de Nascimento" type="date">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Número de Matrícula" type="number">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <div class="secondary_article_discips">
+                            <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                            <select size="3" name="discips" id="discips" multiple>
+                                <option value="mat">Matemática</option>
+                                <option value="fis">Física</option>
+                                <option value="quim">Química</option>
+                                <option value="alg">Álgebra</option>
+                            </select>
+                        </div>
                     </div>
                     <button class="secondary_article_button"> Criar </button>
         
@@ -842,18 +900,29 @@
     <article class="secondary_article" data-page="12">
                     <h1>Alterar Curso</h1>
                     <div class="secondary_article_underline"></div>
-                    <input placeholder="Nome do Curso" type="text">
-                    <input placeholder="Tipo" type="text">
-                    <input placeholder="Faculdade" type="text">
-                    <div class="secondary_article_discips">
-                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
-                        <select size="3" name="discips" id="discips" multiple>
-                            <option value="mat">Matemática</option>
-                            <option value="fis">Física</option>
-                            <option value="quim">Química</option>
-                            <option value="alg">Álgebra</option>
-                        </select>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Nome do Curso" type="text">
                     </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Tipo" type="text">
+                    </div>
+
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Faculdade" type="text">
+                    </div>
+
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <div class="secondary_article_discips">
+                            <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                            <select size="3" name="discips" id="discips" multiple>
+                                <option value="mat">Matemática</option>
+                                <option value="fis">Física</option>
+                                <option value="quim">Química</option>
+                                <option value="alg">Álgebra</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <button class="secondary_article_button"> Alterar </button>
         
     </article>
@@ -861,17 +930,27 @@
     <article class="secondary_article" data-page="13">
                     <h1>Criar Curso</h1>
                     <div class="secondary_article_underline"></div>
-                    <input placeholder="Nome do Curso" type="text">
-                    <input placeholder="Tipo" type="text">
-                    <input placeholder="Faculdade" type="text">
-                    <div class="secondary_article_discips">
-                        <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
-                        <select size="3" name="discips" id="discips" multiple>
-                            <option value="mat">Matemática</option>
-                            <option value="fis">Física</option>
-                            <option value="quim">Química</option>
-                            <option value="alg">Álgebra</option>
-                        </select>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Nome do Curso" type="text">
+                    </div>
+
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Tipo" type="text">
+                    </div>
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <input placeholder="Faculdade" type="text">
+                    </div>
+
+                    <div class="secondary_article_wrap_input" data-error="Parâmetro Obrigatório *">
+                        <div class="secondary_article_discips">
+                            <label for="discips">Disciplinas <span>(ctrl + Clique)</span> </label>
+                            <select size="3" name="discips" id="discips" multiple>
+                                <option value="mat">Matemática</option>
+                                <option value="fis">Física</option>
+                                <option value="quim">Química</option>
+                                <option value="alg">Álgebra</option>
+                            </select>
+                        </div>
                     </div>
                     <button class="secondary_article_button"> Criar </button>
         

@@ -299,17 +299,15 @@ main .main_create{
 }
 
 
-/*Artigo secundário de design*/
+/*Article secundário de design*/
 
 main .secondary_article.is-active{
     width: 100%;
-    min-height: 100%;
     display: flex;
     background-color: var(--GREY-6);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 main .secondary_article_underline{
@@ -346,6 +344,35 @@ main .secondary_article input{
 
 }
 
+main .secondary_article_wrap_input[data-error] input
+{
+    margin-top: 20px;
+    padding: 12px;
+    width: 50%;
+    border:1.5px solid var(--RED);
+    border-radius: 3px;
+
+}
+
+
+
+main .secondary_article_wrap_input[data-error]::after{
+    margin-top: 5px;
+    font-size: var(--P4);
+    font-weight: var(--MEDIUM);
+    color: var(--RED);
+    content: attr(data-error);
+    width: 50%;
+}
+
+main .secondary_article_wrap_input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 main .secondary_article_discips label{
     font-size: var(--P3);
 
@@ -358,6 +385,12 @@ main .secondary_article_discips label span{
 
 main .secondary_article_discips select{
     width: 100%;
+ }
+ 
+ main .secondary_article_wrap_input[data-error] select{
+    width: 100%;
+    border:1.5px solid var(--RED);
+    border-radius: 3px;
  }
 
 main .secondary_article_discips select option{
